@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import {Link} from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import {Link} from 'gatsby'  using AniLink instead of Link for special effects
 import {FaRProject} from "react-icons/fa"
 import {FaAlignRight} from "react-icons/fa"
 import styles from "../css/navbar.module.css"
@@ -25,9 +26,10 @@ export default function Navbar() {
             </div>
             <ul className={ isOpen?`${styles.navLinks} ${styles.showNav}`:`${styles.navLinks}`}>
          {links.map((item, index)=>{
-             return(<li Key={index}><Link to={item.path}>
+             return (<li Key={index}>
+                 <AniLink fade to={item.path}>
                  {item.text}
-                 </Link></li>)
+                 </AniLink></li>)
          })}
             </ul>
             <div className={styles.navSocialLinks}>
