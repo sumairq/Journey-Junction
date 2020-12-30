@@ -8,6 +8,7 @@ import {graphql} from "gatsby"
 import StyledHero from '../components/StyledHero'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import {Link} from 'gatsby'  using AniLink instead of Link for special effects
+import FeaturedTours from "../components/Home/FeaturedTours"
 
 
 
@@ -27,6 +28,7 @@ export default function Home({data}) {
         </StyledHero>
         <About />
         <Services/>
+        <FeaturedTours/>
    </Layout>
    </>
          )

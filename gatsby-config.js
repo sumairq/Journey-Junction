@@ -26,6 +26,7 @@ module.exports = {
   plugins: [`gatsby-plugin-sass`,
   `gatsby-plugin-styled-components`,
   `gatsby-plugin-transition-link`,
+  `gatsby-plugin-playground`,
   
   {
     resolve: `gatsby-source-filesystem`,
