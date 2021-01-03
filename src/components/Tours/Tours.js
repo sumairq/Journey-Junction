@@ -1,42 +1,33 @@
-import React from 'react'
-import ToursList from './ToursList'
-import {useStaticQuery, graphql} from 'gatsby'
+import React from "react"
+import TourList from "./TourList"
+import { useStaticQuery, graphql } from "gatsby"
 
 const getTours = graphql`
-query{
-    tours:allContentfulTour{
-       edges{
-         node{
-           name
-           price 
-           slug
-           country
-           contentful_id
-           days
-           featured
-           images{
-             fluid{
-                ...GatsbyContentfulFluid_tracedSVG	
-             }
-           }
-         }
-           
-         
-       }
-     }
-   }
+  query {
+    tours: allContentfulTour {
+      edges {
+        node {
+          name
+          price
+          slug
+          country
+          contentful_id
+          days
+          images {
+            fluid {
+              ...GatsbyContentfulFluid
+            }
+          }
+        }
+      }
+    }
+  }
 `
 
 const Tours = () => {
-    const {tours}= useStaticQuery(getTours);
+  const { tours } = useStaticQuery(getTours)
 
-    return (
-        <div>
-         hello from tours  
-         <ToursList tours={tours} />    
-        </div>
-    )
+  return <TourList tours={tours} />
 }
 
 export default Tours
- 

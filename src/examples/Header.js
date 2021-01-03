@@ -1,33 +1,33 @@
-// import React from 'react'
-// import {useStaticQuery,graphql} from 'gatsby'
-
+// import React from "react"
+// import { useStaticQuery, graphql } from "gatsby"
 
 // const getSiteData = graphql`
-//      {
-//     site{
-//       siteMetadata{
-//        title
+//   query FirstQuery {
+//     site {
+//       siteMetadata {
+//         title
 //         description
 //         author
 //         data {
-//           name
 //           age
 //         }
-        
 //       }
 //     }
 //   }
 // `
 
 // const Header = () => {
-//     const {site:{siteMetadata:{title}}} = useStaticQuery(getSiteData)
-    
-//     return (
-//         <div>
-//             <h1>title:{title}</h1>    
-//             <h1>author:js</h1>    
-//         </div>
-//     )
+//   const {
+//     site: { siteMetadata },
+//   } = useStaticQuery(getSiteData)
+//   console.log(siteMetadata)
+
+//   return (
+//     <div>
+//       <h1>title:{siteMetadata.title}</h1>
+//       <h1>author:{siteMetadata.author}</h1>
+//     </div>
+//   )
 // }
 
 // export default Header
