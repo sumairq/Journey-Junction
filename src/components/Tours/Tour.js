@@ -6,10 +6,12 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 
 
+
 const Tour = ({tour}) => {
     const {name, price, country, days, slug, images} = tour
 
-    let mainImage =  images[0].fluid;
+    let mainImage = images[0].fluid
+
    console.log(images)
     return ( 
         <article className={styles.tour}>
@@ -22,7 +24,7 @@ const Tour = ({tour}) => {
                <div className={styles.info}>
                 <h4 className={styles.country}>
                     <FaMap className={styles.icon}/>
-                    {country}
+                    {country} || default country
                 </h4>
                 <div className={styles.details}>
                     <h6>{days} days</h6>
@@ -35,5 +37,6 @@ const Tour = ({tour}) => {
         </article> 
     )
 }
+
 
 export default Tour

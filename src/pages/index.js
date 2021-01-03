@@ -9,6 +9,7 @@ import StyledHero from '../components/StyledHero'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import {Link} from 'gatsby'  using AniLink instead of Link for special effects
 import FeaturedTours from "../components/Home/FeaturedTours"
+import SEO from '../components/SEO'
 
 
 
@@ -18,6 +19,7 @@ export default function Home({data}) {
          return ( 
    <>      
   <Layout>
+    <SEO title="Home" description="this is description" />   
         
         <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
               <Banner title="continue exploring" info=" Ea elit enimnulla reprehenderit dolor sunt inct enim fugiat labore labor
