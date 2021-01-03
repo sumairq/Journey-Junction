@@ -16,7 +16,7 @@ query{
            featured
            images{
              fluid{
-                ...GatsbyContentfulFluid
+                ...GatsbyContentfulFluid_tracedSVG	
              }
            }
          }
