@@ -13,8 +13,8 @@ export default ({ data }) => (
     <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
-        title="continue exploring"
-        info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
+        title="Explore with us!"
+        info=" Unlock the World's Wonders, One Tour at a Time."
       >
         <AniLink fade to="/tours" className="btn-white">
           explore tours
