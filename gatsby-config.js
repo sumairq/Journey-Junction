@@ -3,13 +3,13 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: "BackRoads",
+    title: "Journey Junction",
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: "@sumair",
     twitterUsername:"@TheSamCaesar",
     image:'/defaultBcg.jpeg',
-    siteUrl: 'https://sumair-backroads.netlify.app'
+    siteUrl: 'https://sumair-journey-junction.netlify.app'
   },
   plugins: [
     {
